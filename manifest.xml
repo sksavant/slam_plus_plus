@@ -1,0 +1,19 @@
+<package>
+  <description brief="slam_plus_plus">
+
+     slam_plus_plus
+
+  </description>
+  <author>Simon Lynen</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/slam_plus_plus</url>
+
+<depend package="roscpp"/>
+<rosdep name="eigen"/>
+
+<export><cpp cflags="`pkg-config --cflags eigen3` -I${prefix}/ceres_src/include -I${prefix}/dependencies/glog/src -I${prefix}/dependencies/gflags/src" lflags="-L${prefix}/lib -L${prefix}/dependencies/gflags/.libs -L${prefix}/dependencies/glog/.libs -lglog -lgflags -lslam_plus_plus -llapack -lblas -lcamd -lamd -lccolamd -lcolamd -lcholmod -fopenmp -lpthread -lgomp -lm -lcxsparse -lprotobuf"/></export>
+
+</package>
+
+
