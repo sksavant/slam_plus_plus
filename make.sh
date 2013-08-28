@@ -23,6 +23,6 @@ make -j8 -l8
 rm -rf $PACKAGE_DIR/bin
 rm -rf $PACKAGE_DIR/lib
 
-cp -R $PACKAGE_DIR/$SLAM_PP_PATH/build/lib $PACKAGE_DIR/lib
-cp -R $PACKAGE_DIR/$SLAM_PP_PATH/build/bin $PACKAGE_DIR/bin
+cp -R $PACKAGE_DIR/$SLAM_PP_PATH/lib $PACKAGE_DIR/lib
+cp -R $PACKAGE_DIR/$SLAM_PP_PATH/bin $PACKAGE_DIR/bin
 
